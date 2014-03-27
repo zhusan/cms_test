@@ -19,3 +19,4 @@
 /config/initializers/carrierwave.rb
 # /config/*.yml
 public/uploads/*
+public/assets/*
