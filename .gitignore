@@ -17,5 +17,5 @@
 *.swp
 *.swo
 /config/initializers/carrierwave.rb
-/config/*.yml
+# /config/*.yml
 public/uploads/*

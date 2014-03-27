@@ -1,0 +1,11 @@
+defaults: &defaults
+  token: "zhusan"
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults
