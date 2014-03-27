@@ -1,5 +1,5 @@
-source 'http://ruby.taobao.org'
-# source 'https://rubygems.org'
+# source 'http://ruby.taobao.org'
+source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
@@ -59,3 +59,7 @@ gem 'rack-cors', require: 'rack/cors'
 gem 'hashie'
 #配置yaml设置文件
 gem 'settingslogic'
+#
+gem 'nokogiri'
+#A XML parameters parser for rails 4.0
+gem 'actionpack-xml_parser'

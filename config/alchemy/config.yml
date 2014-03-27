@@ -81,8 +81,8 @@ image_output_format: jpg
 
 # This is the default language for new sites.
 default_language:
-  code: "zh-CN"
-  name: Chinese
+  code: en
+  name: English
   page_layout: index
   frontpage_name: Index
 
@@ -114,7 +114,7 @@ default_language:
 #
 mailer:
   page_layout_name: contact
-  forward_to_page: true
+  forward_to_page: false
   mail_success_page: thanks
   mail_from: your.mail@your-domain.com
   mail_to: your.mail@your-domain.com

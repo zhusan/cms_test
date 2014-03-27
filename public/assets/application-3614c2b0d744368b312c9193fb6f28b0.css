@@ -1,0 +1,45 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or vendor/assets/stylesheets of plugins, if any, can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the top of the
+ * compiled file, but it's generally better to create a new file per style scope.
+ *
+
+
+ */
+
+/* line 1, /home/zs/workspace/cms_test/app/assets/stylesheets/alchemy.elements.css.scss */
+article {
+  width: 50%;
+  font: 16px/20px Helvetica, Arial, sans-serif;
+  color: #333;
+  margin: 1em auto;
+  padding: 0.5em 1em;
+  background: #f4f4f4;
+}
+/* line 9, /home/zs/workspace/cms_test/app/assets/stylesheets/alchemy.elements.css.scss */
+article h2 {
+  font-size: 24px;
+  line-height: 1.25;
+  font-weight: bold;
+}
+/* line 15, /home/zs/workspace/cms_test/app/assets/stylesheets/alchemy.elements.css.scss */
+article a {
+  color: #5588D3;
+}
+/* line 19, /home/zs/workspace/cms_test/app/assets/stylesheets/alchemy.elements.css.scss */
+article img {
+  max-width: 100%;
+}
+/* line 23, /home/zs/workspace/cms_test/app/assets/stylesheets/alchemy.elements.css.scss */
+article figure {
+  margin: 0;
+}
+/* line 27, /home/zs/workspace/cms_test/app/assets/stylesheets/alchemy.elements.css.scss */
+article figcaption {
+  font-size: 14px;
+}
