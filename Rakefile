@@ -5,10 +5,13 @@ require File.expand_path('../config/application', __FILE__)
 #show DangJian::API routes
 desc "API Routes"
 task :routes do
-  DangJian::API.routes.each do |api|
-    method = api.route_method.ljust(10)
-    path = api.route_path
-    puts "     #{method} #{path}"
+  api_modul = [DangJian::API, WeiXin::API]
+  api_modul.each do |m|
+    m.routes.each do |api|
+      method = api.route_method.ljust(10)
+      path = api.route_path
+      puts "     #{method} #{path}"
+    end
   end
 end
 ###

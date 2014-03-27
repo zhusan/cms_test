@@ -57,3 +57,5 @@ gem 'grape'
 gem 'rack-cors', require: 'rack/cors'
 #包装hash
 gem 'hashie'
+#配置yaml设置文件
+gem 'settingslogic'

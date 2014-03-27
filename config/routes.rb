@@ -1,7 +1,9 @@
 CrmTest::Application.routes.draw do
   require 'api'
+  require 'weixin_api'
   mount Alchemy::Engine => 'mycms'
   mount DangJian::API => "/"
+  mount WeiXin::API => "/"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

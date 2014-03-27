@@ -25,6 +25,7 @@ module CrmTest
       allow do
         origins '*'
         resource '/api/*', headers: :any, methods: [:get, :post, :put, :delete, :destroy]
+        resource '/weixin_api/*', headers: :any, methods: [:get, :post, :put, :delete, :destroy]
       end
     end
   end
