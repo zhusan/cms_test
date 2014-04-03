@@ -46,10 +46,10 @@ end
 # gem 'debugger', group: [:development, :test]
 #
 #
-gem 'alchemy_cms', github: 'magiclabs/alchemy_cms', branch: 'master'
-gem 'alchemy-devise', github: 'magiclabs/alchemy-devise', branch: 'master'
-
-
+gem 'alchemy_cms', :path =>  './git_path/alchemy_cms'
+gem 'alchemy-devise', :path =>  './git_path/alchemy-devise'
+gem 'alchemy_spree', :path =>  './git_path/alchemy_spree'
+gem 'spree', :path =>  './git_path/spree'
 
 #API
 gem 'grape'
@@ -63,3 +63,6 @@ gem 'settingslogic'
 gem 'nokogiri'
 #A XML parameters parser for rails 4.0
 gem 'actionpack-xml_parser'
+# Bootstrap
+gem 'bootstrap-sass', '~> 3.1.0'
+gem 'will_paginate-bootstrap'
