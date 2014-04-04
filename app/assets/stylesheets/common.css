@@ -1,3 +1,35 @@
-.w320{
+.w320 {
   width: 320px;
+}
+.floatDiv {
+  position: fixed;
+  left:10px;
+  bottom:40%;
+  width:160px;
+  height:240px;
+  overflow:hidden;
+  border:2px groove #281;
+  cursor:default;
+  -moz-user-select: none;
+ }
+.floatTitle {
+  line-height:20px;
+  height:20px;
+  width:160px;
+  overflow:hidden;
+  background-color:#27C;
+  color:white;
+  font-weight: bold;
+  border-bottom:1px outset blue;
+  text-align:center;
+}
+.floatBody {
+  height:218px;
+  width:160px;
+  overflow-x:hidden;
+  overflow-y:auto;
+  border-top:1px inset blue;
+  padding:10px;
+  text-indent:10px;
+  background-color:white;
 }
