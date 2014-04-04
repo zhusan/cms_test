@@ -1,10 +1,9 @@
 
-
 site: http://cms.zhusan.net/cms/index
 
 * cms: http://cms.zhusan.net/cms
 
-* cms manage: http://cms.zhusan.net/cms/admin
+* cms manage: http://cms.zhusan.net/cms/admin/login
 
 * spree: http://cms.zhusan.net/shop
 
