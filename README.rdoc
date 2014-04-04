@@ -1,6 +1,6 @@
 == README
 
-site: http://cms.zhusan.net/
+site: http://cms.zhusan.net/index
 
 * cms: http://cms.zhusan.net/cms
 
