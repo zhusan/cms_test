@@ -8,5 +8,5 @@ site: http://cms.zhusan.net/cms/index
 
 * spree: http://cms.zhusan.net/shop
 
-* spree manage: http://cms.zhusan.net/shop/admin
+* spree manage: http://cms.zhusan.net/cms/admin/spree
 
