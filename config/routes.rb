@@ -10,7 +10,7 @@ CrmTest::Application.routes.draw do
   require 'api'
   require 'weixin_api'
   resource :weixin
-  mount Alchemy::Engine => '/'
+  mount Alchemy::Engine => '/cms'
   mount DangJian::API => "/"
   mount WeiXin::API => "/"
   mount Spree::Core::Engine, at: '/shop'
