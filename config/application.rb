@@ -20,7 +20,7 @@ module CrmTest
         Rails.configuration.cache_classes ? require(c) : load(c)
       end
     end
-
+    
     config.middleware.insert_after ActionDispatch::ParamsParser, ActionDispatch::XmlParamsParser
     config.autoload_paths += %W(#{config.root}/app/grape)
     # Settings in config/environments/* take precedence over those specified here.
