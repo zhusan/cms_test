@@ -11,5 +11,5 @@
   autogenerate: [article]
 - name: bootstrap
   unique: false
-  elements: [essence]
-  autogenerate: [essence]
+  elements: [article]
+  autogenerate: [article]
