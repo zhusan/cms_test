@@ -14,7 +14,7 @@ development:
   database: cms_development
   pool: 5
   username: root
-  password: '3199333'
+  password: '123456'
   host: localhost
 
 # Warning: The database defined as "test" will be erased and
@@ -27,5 +27,5 @@ production:
   database: cms_development
   pool: 5
   username: root
-  password: '3199333'
+  password: '123456'
   host: localhost

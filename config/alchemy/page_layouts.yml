@@ -2,14 +2,18 @@
 #
 # For further informations please see http://guides.alchemy-cms.com/create_page_layouts.html
 - name: index
+  taggable: true
   unique: false
   elements: [article]
   autogenerate: [article]
 - name: test_layout
+  taggable: true
   unique: false
   elements: [article]
   autogenerate: [article]
 - name: bootstrap
+  layoutpage: true
+  taggable: true
   unique: false
   elements: [article]
   autogenerate: [article]

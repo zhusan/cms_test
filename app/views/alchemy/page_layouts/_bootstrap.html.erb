@@ -1,30 +1,30 @@
 <%= render "/alchemy/partial/header" %>
 <div class="container">
-  <div>
-    <% @pages.each do |page| %>
-      <% if page.title %>
-        <blockquote>
-          <p>
-          <%= link_to page.title, root_path(urlname: page.urlname) %>
-          </p>
-          <small>
-            <span><%= page.meta_description %></span>
-          </small>
-        </blockquote>
+  <% if @pages %>
+    <div>
+      <% @pages.each do |page| %>
+        <% if page.title %>
+          <blockquote>
+            <p>
+            <%= link_to page.title, root_path(urlname: page.urlname) %>
+            </p>
+            <small>
+              <span><%= page.meta_description %></span>
+            </small>
+          </blockquote>
+        <% end %>
       <% end %>
-    <% end %>
-  </div>
+    </div>
 
-  <%= will_paginate @pages %>
+    <%= paginate @pages %>
+  <% end %>
 </div>
 <div class="floatDiv">
   <div class="floatTitle">demo - Fixed</div>
   <div class="floatBody">
-    <p>Hello world</p>
-    <p><%= params[:action] %></p>
-    <p>Hello world</p>
-    <p>Hello world</p>
-    <p>Hello world</p>
-    <p>Hello world</p>
+    <% @page_tags.each do |tag| %>
+      <p><%= link_to tag.name, root_path(tag_name: tag.name) %></p>
+    <% end %>
+
   </div>
 </div>
