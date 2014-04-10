@@ -8,6 +8,9 @@
             <p>
             <%= link_to page.title, root_path(urlname: page.urlname) %>
             </p>
+            <% page.tags.each do |tag| %>
+              <span><%= link_to tag.name, root_path(tag_name: tag.name), class: "label label-default" %><span>
+            <% end %>
             <small>
               <span><%= page.meta_description %></span>
             </small>
