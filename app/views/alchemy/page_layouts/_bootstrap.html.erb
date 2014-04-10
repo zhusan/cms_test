@@ -1,6 +1,6 @@
 <%= render "/alchemy/partial/header" %>
 <div class="container">
-  <% if @pages %>
+  <% if params[:urlname] == 'index' %>
     <div>
       <% @pages.each do |page| %>
         <% if page.title %>
@@ -8,8 +8,6 @@
             <p>
             <%= link_to page.title, root_path(urlname: page.urlname) %>
             </p>
-            <%puts page.tag_list %>
-            <%puts '-----------------------------------' %>
             <% page.tag_list.each do |tag| %>
               <span>
                 <%= link_to tag, root_path(tag_name: tag), class: "label label-default" %>

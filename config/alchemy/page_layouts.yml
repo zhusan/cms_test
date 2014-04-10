@@ -12,7 +12,7 @@
   elements: [article]
   autogenerate: [article]
 - name: bootstrap
-  layoutpage: true
+  # layoutpage: true
   taggable: true
   unique: false
   elements: [article]
