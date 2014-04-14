@@ -1,5 +1,6 @@
 CrmTest::Application.routes.draw do
-
+  
+  get "qiniu_tests/upload_img_by_url" => 'qiniu_tests#upload_img_by_url'
         
   # This line mounts Spree's routes at the root of your application.
   # This means, any requests to URLs such as /products, will go to Spree::ProductsController.

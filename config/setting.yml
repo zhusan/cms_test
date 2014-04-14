@@ -1,0 +1,16 @@
+defaults: &defaults
+  token: "zhusan"
+  qiniu:
+    access_key: 'aWtMOlR4a40Vh4mLPfs2z8g9MK3fBfvvcdGU_E-R'
+    secret_key: 'e-VWLZMm8gvkzWxRbls5CWEUVTC6IMQrTQWVTLom'
+  alchemy_cms:
+    qiniu: true
+
+development:
+  <<: *defaults
+
+test:
+  <<: *defaults
+
+production:
+  <<: *defaults

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140402091892) do
+ActiveRecord::Schema.define(version: 20140414090803) do
 
   create_table "alchemy_attachments", force: true do |t|
     t.string   "name"
@@ -24,6 +24,7 @@ ActiveRecord::Schema.define(version: 20140402091892) do
     t.datetime "updated_at",      null: false
     t.text     "cached_tag_list"
     t.string   "file_uid"
+    t.string   "webfile"
   end
 
   add_index "alchemy_attachments", ["file_uid"], name: "index_alchemy_attachments_on_file_uid", using: :btree
@@ -266,6 +267,7 @@ ActiveRecord::Schema.define(version: 20140402091892) do
     t.text     "cached_tag_list"
     t.string   "image_file_uid"
     t.integer  "image_file_size"
+    t.string   "webfile"
   end
 
   create_table "alchemy_sites", force: true do |t|
