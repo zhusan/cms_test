@@ -1,5 +1,10 @@
 defaults: &defaults
-  token: "zhusan"
+  token: ""
+  qiniu:
+    access_key: ''
+    secret_key: ''
+  alchemy_cms:
+    qiniu: true
 
 development:
   <<: *defaults
