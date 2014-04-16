@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140414090803) do
+ActiveRecord::Schema.define(version: 20140415062739) do
 
   create_table "alchemy_attachments", force: true do |t|
     t.string   "name"
@@ -72,6 +72,18 @@ ActiveRecord::Schema.define(version: 20140414090803) do
     t.integer "page_id"
   end
 
+  create_table "alchemy_essence_audios", force: true do |t|
+    t.integer  "attachment_id"
+    t.integer  "width",           default: 400
+    t.integer  "height",          default: 300
+    t.boolean  "show_eq",         default: true
+    t.boolean  "show_navigation", default: true
+    t.integer  "creator_id"
+    t.integer  "updater_id"
+    t.datetime "created_at",                     null: false
+    t.datetime "updated_at",                     null: false
+  end
+
   create_table "alchemy_essence_booleans", force: true do |t|
     t.boolean  "value"
     t.datetime "created_at", null: false
@@ -98,6 +110,17 @@ ActiveRecord::Schema.define(version: 20140414090803) do
     t.integer  "updater_id"
     t.datetime "created_at",    null: false
     t.datetime "updated_at",    null: false
+  end
+
+  create_table "alchemy_essence_flashes", force: true do |t|
+    t.integer  "attachment_id"
+    t.integer  "width",          default: 400
+    t.integer  "height",         default: 300
+    t.string   "player_version", default: "9.0.28"
+    t.integer  "creator_id"
+    t.integer  "updater_id"
+    t.datetime "created_at",                        null: false
+    t.datetime "updated_at",                        null: false
   end
 
   create_table "alchemy_essence_htmls", force: true do |t|
@@ -183,6 +206,19 @@ ActiveRecord::Schema.define(version: 20140414090803) do
     t.integer  "updater_id"
     t.datetime "created_at",                      null: false
     t.datetime "updated_at",                      null: false
+  end
+
+  create_table "alchemy_essence_videos", force: true do |t|
+    t.integer  "attachment_id"
+    t.integer  "width"
+    t.integer  "height"
+    t.boolean  "allow_fullscreen", default: true
+    t.boolean  "auto_play",        default: false
+    t.boolean  "show_navigation",  default: true
+    t.integer  "creator_id"
+    t.integer  "updater_id"
+    t.datetime "created_at",                       null: false
+    t.datetime "updated_at",                       null: false
   end
 
   create_table "alchemy_folded_pages", force: true do |t|

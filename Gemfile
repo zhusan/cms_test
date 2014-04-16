@@ -74,3 +74,6 @@ gem 'qiniu-rs'
 gem 'carrierwave'
 gem 'carrierwave-qiniu'
 gem 'mini_magick'
+gem 'alchemy-richmedia-essences', :git => "git@github.com:magiclabs/alchemy-richmedia-essences.git", :branch => "master"
+
+gem "harmonious_dictionary", :git => "git@github.com:zhusan/harmonious_dictionary.git"
