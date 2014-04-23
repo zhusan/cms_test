@@ -10,3 +10,5 @@
 //= require spree/backend
 
 //= require_tree .
+//= require spree/backend/spree_multi_domain
+//= require spree/backend/spree_i18n

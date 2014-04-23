@@ -1,5 +1,15 @@
 CrmTest::Application.routes.draw do
-  
+
+  # This line mounts Spree's routes at the root of your application.
+  # This means, any requests to URLs such as /products, will go to Spree::ProductsController.
+  # If you would like to change where this engine is mounted, simply change the :at option to something different.
+  #
+  # We ask that you don't use the :as option here, as Spree relies on it being the default of "spree"
+  mount Spree::Core::Engine, :at => '/shop'
+          
+
+  mount Alchemy::Engine => 'cms'
+
   get "qiniu_tests/upload_img_by_url" => 'qiniu_tests#upload_img_by_url'
         
   # This line mounts Spree's routes at the root of your application.
@@ -11,10 +21,8 @@ CrmTest::Application.routes.draw do
   require 'api'
   require 'weixin_api'
   resource :weixin
-  mount Alchemy::Engine => '/cms'
   mount DangJian::API => "/"
   mount WeiXin::API => "/"
-  mount Spree::Core::Engine, at: '/shop'
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
