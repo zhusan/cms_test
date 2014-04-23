@@ -1,0 +1,13 @@
+<%= render "/alchemy/partial/header" %>
+<div class="container">
+  <%= render_elements %>
+</div>
+<div class="floatDiv">
+  <div class="floatTitle">tags</div>
+  <div class="floatBody">
+    <% @page_tags.each do |tag| %>
+      <p><%= link_to tag.name, root_path(tag_name: tag.name) %></p>
+    <% end %>
+
+  </div>
+</div>

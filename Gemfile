@@ -49,8 +49,8 @@ end
 gem 'alchemy_cms', :path =>  './git_path/alchemy_cms'
 gem 'alchemy-devise', :path =>  './git_path/alchemy-devise'
 gem 'alchemy_spree', :path =>  './git_path/alchemy_spree'
-gem 'spree', :path =>  './git_path/spree'
-
+#gem 'spree', :path =>  './git_path/spree'
+gem 'spree', github: 'spree/spree', branch: '2-2-stable'
 #API
 gem 'grape'
 # for api 跨域
@@ -74,6 +74,11 @@ gem 'qiniu-rs'
 gem 'carrierwave'
 gem 'carrierwave-qiniu'
 gem 'mini_magick'
-gem 'alchemy-richmedia-essences', :git => "git@github.com:magiclabs/alchemy-richmedia-essences.git", :branch => "master"
+gem 'alchemy-richmedia-essences', :path =>  './git_path/alchemy-richmedia-essences'
 
 gem "harmonious_dictionary", :git => "git@github.com:zhusan/harmonious_dictionary.git"
+
+
+gem 'spree_i18n', github: 'spree/spree_i18n', branch: '2-2-stable'
+
+gem 'spree_multi_domain', git: 'git://github.com/spree/spree-multi-domain.git', branch: '2-2-stable'

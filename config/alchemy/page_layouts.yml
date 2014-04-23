@@ -12,8 +12,12 @@
   elements: [article]
   autogenerate: [article]
 - name: bootstrap
-  # layoutpage: true
   taggable: true
   unique: false
   elements: [article]
   autogenerate: [article]
+- name: video_test
+  taggable: true
+  unique: false
+  elements: [video]
+  autogenerate: [video]
