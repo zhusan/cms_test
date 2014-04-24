@@ -95,4 +95,4 @@ group :development do
   gem 'capistrano-rvm'
 end
 #net-ssh 2.8.0连接不上vps
-gem "net-ssh", "~> 2.6.0"
+gem "net-ssh", "~> 2.7.0"
