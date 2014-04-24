@@ -1,5 +1,5 @@
-# source 'http://ruby.taobao.org'
-source 'https://rubygems.org'
+ source 'http://ruby.taobao.org'
+#source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.0.4'
@@ -29,8 +29,8 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 group :doc do
-  # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+# bundle exec rake doc:rails generates the API under doc/api.
+gem 'sdoc', require: false
 end
 
 # Use ActiveModel has_secure_password
@@ -46,9 +46,11 @@ end
 # gem 'debugger', group: [:development, :test]
 #
 #
+
 gem 'alchemy_cms', :path =>  './git_path/alchemy_cms'
 gem 'alchemy-devise', :path =>  './git_path/alchemy-devise'
 gem 'alchemy_spree', :path =>  './git_path/alchemy_spree'
+
 # gem 'spree', :path =>  './git_path/spree'zhusae
 gem 'spree', github: 'spree/spree', branch: '2-2-stable'
 
@@ -75,7 +77,7 @@ gem 'qiniu-rs'
 gem 'carrierwave'
 gem 'carrierwave-qiniu'
 gem 'mini_magick'
-gem 'alchemy-richmedia-essences', :git => "git@github.com:magiclabs/alchemy-richmedia-essences.git", :branch => "master"
+#gem 'alchemy-richmedia-essences', :git => "git@github.com:magiclabs/alchemy-richmedia-essences.git", :branch => "master"
 
 gem "harmonious_dictionary", :git => "git@github.com:zhusan/harmonious_dictionary.git"
 
@@ -83,3 +85,14 @@ gem 'spree_multi_domain', git: 'git://github.com/spree/spree-multi-domain.git', 
 
 
 gem 'spree_i18n', github: 'spree/spree_i18n', :branch => "2-2-stable"
+
+
+group :development do
+  gem 'capistrano'
+  gem 'capistrano-bundler'
+  gem 'capistrano-rails'
+  # gem 'capistrano-rbenv'
+  gem 'capistrano-rvm'
+end
+#net-ssh 2.8.0连接不上vps
+gem "net-ssh", "~> 2.6.0"
