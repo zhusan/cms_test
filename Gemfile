@@ -93,6 +93,7 @@ group :development do
   gem 'capistrano-rails'
   # gem 'capistrano-rbenv'
   gem 'capistrano-rvm'
+  gem 'rvm1-capistrano3', :require => false
 end
 #net-ssh 2.8.0连接不上vps
 gem "net-ssh", "~> 2.7.0"
