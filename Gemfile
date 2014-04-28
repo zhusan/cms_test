@@ -47,9 +47,9 @@ end
 #
 #
 
-gem 'alchemy_cms', :path =>  './git_path/alchemy_cms'
-gem 'alchemy-devise', :path =>  './git_path/alchemy-devise'
-gem 'alchemy_spree', :path =>  './git_path/alchemy_spree'
+gem 'alchemy_cms', :git => "git@github.com:zhusan/alchemy_cms.git"
+gem 'alchemy-devise', :git => "git@github.com:zhusan/alchemy-devise.git"
+gem 'alchemy_spree', :git => "git@github.com:zhusan/alchemy_spree.git"
 
 # gem 'spree', :path =>  './git_path/spree'zhusae
 gem 'spree', github: 'spree/spree', branch: '2-2-stable'
