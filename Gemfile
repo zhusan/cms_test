@@ -81,7 +81,7 @@ gem 'mini_magick'
 
 gem "harmonious_dictionary", :git => "git@github.com:zhusan/harmonious_dictionary.git"
 
-gem 'spree_multi_domain', git: 'git://github.com/spree/spree-multi-domain.git', :branch => "2-2-stable"
+#gem 'spree_multi_domain', git: 'git://github.com/spree/spree-multi-domain.git', :branch => "2-2-stable"
 
 
 gem 'spree_i18n', github: 'spree/spree_i18n', :branch => "2-2-stable"
@@ -97,3 +97,4 @@ group :development do
 end
 #net-ssh 2.8.0连接不上vps
 gem "net-ssh", "~> 2.7.0"
+gem 'ckeditor'

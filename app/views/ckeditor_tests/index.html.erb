@@ -1,0 +1,29 @@
+<h1>Listing ckeditor_tests</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Title</th>
+      <th>Content</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @ckeditor_tests.each do |ckeditor_test| %>
+      <tr>
+        <td><%= ckeditor_test.title %></td>
+        <td><%= sanitize ckeditor_test.content %></td>
+        <td><%= link_to 'Show', ckeditor_test %></td>
+        <td><%= link_to 'Edit', edit_ckeditor_test_path(ckeditor_test) %></td>
+        <td><%= link_to 'Destroy', ckeditor_test, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Ckeditor test', new_ckeditor_test_path %>
